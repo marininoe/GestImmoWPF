@@ -1,0 +1,23 @@
+﻿<Page x:Class="GestImmoWPF.Views.Forms.GererBienFrom"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestImmoWPF.Views.Forms"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="GererBienFrom">
+
+    <Grid>
+        <ComboBox x:Name="ComboBox_TypeBien" HorizontalAlignment="Left" Margin="146,41,0,0" VerticalAlignment="Top" Width="198" SelectionChanged="ComboBox_TypeBien_SelectionChanged">
+            <ComboBoxItem>Box</ComboBoxItem>
+            <ComboBoxItem>Maison</ComboBoxItem>
+            <ComboBoxItem>Appartement</ComboBoxItem>
+        </ComboBox>
+        <Frame x:Name="Frame_Ajouter_Bien" Content="" Margin="0,70,0,0" />
+        <Label Content="Type" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="80,39,0,0"/>
+        <Label Content="Séléctionner votre bien"  HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="179,10,0,0"/>
+
+
+    </Grid>
+</Page>

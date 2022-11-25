@@ -1,0 +1,18 @@
+﻿<Page x:Class="GestImmoWPF.Views.Subviews.BienView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestImmoWPF.Views.Subviews"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BienView">
+
+    <Grid>
+        <Frame x:Name="Mainframe" Content=""/>
+        <Frame x:Name="listBiens" Content="" Margin="0,0,426,10" Navigated="listBiens_Navigated"/>
+        <Frame x:Name="AjtBiens" Content="" Margin="416,0,10,10" Navigated="AjtBiens_Navigated"/>
+
+    </Grid>
+</Page>
+    

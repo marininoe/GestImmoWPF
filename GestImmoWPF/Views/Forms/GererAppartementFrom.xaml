@@ -1,0 +1,30 @@
+﻿<Page x:Class="GestImmoWPF.Views.Forms.GererAppartementFrom"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestImmoWPF.Views.Forms"
+      mc:Ignorable="d" 
+      d:DesignHeight="380" d:DesignWidth="400"
+      Title="GererAppartementFrom">
+
+    <Grid Height="310" VerticalAlignment="Center">
+        <Label Content="Nom" HorizontalAlignment="Left" Margin="22,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Valeur" HorizontalAlignment="Left" Margin="22,82,0,0" VerticalAlignment="Top"/>
+        <Label Content="Surface" HorizontalAlignment="Left" Margin="22,117,0,0" VerticalAlignment="Top"/>
+        <Label Content="Adresse" HorizontalAlignment="Left" Margin="22,51,0,0" VerticalAlignment="Top"/>
+        <Label Content="Parking" HorizontalAlignment="Left" Margin="22,268,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cave" HorizontalAlignment="Left" Margin="22,232,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombre de chambre" HorizontalAlignment="Left" Margin="22,186,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombre de piece" HorizontalAlignment="Left" Margin="22,148,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="157,24,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="157,59,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="157,90,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="157,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="157,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="157,190,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="157,232,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="157,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="311,150,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
