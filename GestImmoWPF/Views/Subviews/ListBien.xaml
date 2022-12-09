@@ -21,7 +21,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView x:Name="ListBiensView" HorizontalAlignment="Left" Height="215" Margin="78,32,0,0" Grid.Row="2" VerticalAlignment="Top" Width="237" d:ItemsSource="{d:SampleData ItemCount=5}">
+        <ListView x:Name="ListBiensView" HorizontalAlignment="Center" Height="272" Grid.Row="2" VerticalAlignment="Center" Width="299" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBiensView_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>

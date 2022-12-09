@@ -24,6 +24,7 @@ namespace WPF_TP.Data.Models
         public string Prenom { get => prenom; set => prenom = value; }
         public int Age { get => age; set => age = value; }
         public string Profession { get => profession; set => profession = value; }
-
+        
     }
+    
 }

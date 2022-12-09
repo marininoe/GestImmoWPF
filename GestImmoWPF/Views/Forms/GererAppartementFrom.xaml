@@ -8,23 +8,52 @@
       d:DesignHeight="380" d:DesignWidth="400"
       Title="GererAppartementFrom">
 
-    <Grid Height="310" VerticalAlignment="Center">
-        <Label Content="Nom" HorizontalAlignment="Left" Margin="22,20,0,0" VerticalAlignment="Top"/>
-        <Label Content="Valeur" HorizontalAlignment="Left" Margin="22,82,0,0" VerticalAlignment="Top"/>
-        <Label Content="Surface" HorizontalAlignment="Left" Margin="22,117,0,0" VerticalAlignment="Top"/>
-        <Label Content="Adresse" HorizontalAlignment="Left" Margin="22,51,0,0" VerticalAlignment="Top"/>
-        <Label Content="Parking" HorizontalAlignment="Left" Margin="22,268,0,0" VerticalAlignment="Top"/>
-        <Label Content="Cave" HorizontalAlignment="Left" Margin="22,232,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre de chambre" HorizontalAlignment="Left" Margin="22,186,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre de piece" HorizontalAlignment="Left" Margin="22,148,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="157,24,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="157,59,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="157,90,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="157,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="157,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="157,190,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="157,232,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="157,272,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="311,150,0,0" VerticalAlignment="Top"/>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="txtApNom" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap"  VerticalAlignment="Center" />
+        <TextBox x:Name="txtApValeur" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtApAdresse" Grid.Row="2" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtApSurface" Grid.Row="3" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtApNbPiece" Grid.Row="4" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtApNbChambre" Grid.Row="5" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtApCave" Grid.Row="6" Grid.Column="1"  TextWrapping="Wrap"  VerticalAlignment="Center" />
+        <TextBox x:Name="txtApParking" Grid.Row="7" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtApEtage" Grid.Row="8" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+
+        <Label Content="Nom" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Valeur" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Adresse" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Surface" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Nombre de pièce" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Nombre de chambre" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Cave" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Parking" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Chauffage Commun" Grid.Row="10" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Ascenseur" Grid.Row="9" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Étages" Grid.Row="8" Grid.Column="0" VerticalAlignment="Center"/>
+        <Button x:Name="btnAjouter"  Grid.Row="11" Grid.Column="1" Content="Ajouter" HorizontalAlignment="Center" VerticalAlignment="center" Click="btnAjouter_Click"/>
+        <TextBox x:Name="txtApAscenceur"  Grid.Row="9" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center"  />
+        <TextBox x:Name="txtApChauffage"  Grid.Row="10" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center"/>
+
+
     </Grid>
 </Page>

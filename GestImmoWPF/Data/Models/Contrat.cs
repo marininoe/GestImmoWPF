@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime;
 using System.Text;
 
 namespace WPF_TP.Data.Models
@@ -39,6 +40,12 @@ namespace WPF_TP.Data.Models
                 Console.WriteLine("\n===Locataire===");
                 Console.WriteLine("\n" + locataire.Nom + locataire.Prenom + " - " + locataire.Age + " - " + locataire.Profession);
             }
+
+
+
+
+            // List<Locataire> listLocataire.Add(jean, paul, 50, prof);
+
         }
     }
 }

@@ -14,7 +14,7 @@
             <ComboBoxItem>Maison</ComboBoxItem>
             <ComboBoxItem>Appartement</ComboBoxItem>
         </ComboBox>
-        <Frame x:Name="Frame_Ajouter_Bien" Content="" Margin="0,70,0,0" />
+        <Frame x:Name="Frame_Ajouter_Bien" Content="" Margin="0,70,0,0" Navigated="Frame_Ajouter_Bien_Navigated" />
         <Label Content="Type" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="80,39,0,0"/>
         <Label Content="Séléctionner votre bien"  HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="179,10,0,0"/>
 

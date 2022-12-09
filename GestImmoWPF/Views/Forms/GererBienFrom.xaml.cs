@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestImmoWPF.Views.Tools;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,25 +21,47 @@ namespace GestImmoWPF.Views.Forms
     /// </summary>
     public partial class GererBienFrom : Page
     {
-        public GererBienFrom()
+        
+        private IObserver obs;
+        public GererBienFrom(IObserver obs)
         {
             InitializeComponent();
-        }
+            this.obs = obs;
 
+            
+        }
+   
         private void ComboBox_TypeBien_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (ComboBox_TypeBien.SelectedIndex == 0)
             {
-                this.Frame_Ajouter_Bien.Navigate(new GererBoxFrom());
+                GererBoxFrom gererBoxFrom = new GererBoxFrom();
+                gererBoxFrom.Observers.Add(this.obs);
+                this.Frame_Ajouter_Bien.Navigate((gererBoxFrom));
             }
             else if (ComboBox_TypeBien.SelectedIndex == 1)
             {
-                this.Frame_Ajouter_Bien.Navigate(new GererMaisonFrom());
+                GererMaisonFrom gererMaisonFrom = new GererMaisonFrom();
+                gererMaisonFrom.Observers.Add(this.obs);
+                this.Frame_Ajouter_Bien.Navigate((gererMaisonFrom));
             }
             else if (ComboBox_TypeBien.SelectedIndex == 2)
             {
-                this.Frame_Ajouter_Bien.Navigate(new GererAppartementFrom());
+                GererAppartementFrom gererAppartementFrom = new GererAppartementFrom();
+                gererAppartementFrom.Observers.Add(this.obs);
+                this.Frame_Ajouter_Bien.Navigate((gererAppartementFrom));
             }
         }
+
+        private void Frame_Ajouter_Bien_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
+        
+
+       
+
+       
+
     }
 }

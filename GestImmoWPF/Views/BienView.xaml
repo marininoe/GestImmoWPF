@@ -8,10 +8,15 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="BienView">
 
-    <Grid>
-        <Frame x:Name="Mainframe" Content=""/>
-        <Frame x:Name="listBiens" Content="" Margin="0,0,426,10" Navigated="listBiens_Navigated"/>
-        <Frame x:Name="AjtBiens" Content="" Margin="416,0,10,10" Navigated="AjtBiens_Navigated"/>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="384"/>
+            <ColumnDefinition Width="384"/>
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="listBiens" Content="Frame" Navigated="Frame_Navigated_1"/>
+        <Frame x:Name="AjtBiens" Grid.Column="1" Content="Frame" Navigated="Frame_Navigated"/>
+
+
 
     </Grid>
 </Page>

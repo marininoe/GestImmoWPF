@@ -8,24 +8,40 @@
       d:DesignHeight="450" d:DesignWidth="400"
       Title="GererMaisonFrom">
 
-    <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="184,59,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="184,98,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="184,137,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="184,181,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="184,356,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="184,225,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="184,276,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="184,319,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Nom" HorizontalAlignment="Left" Margin="47,55,0,0" VerticalAlignment="Top"/>
-        <Label Content="Adresse" HorizontalAlignment="Left" Margin="47,98,0,0" VerticalAlignment="Top"/>
-        <Label Content="Valeur" HorizontalAlignment="Left" Margin="43,133,0,0" VerticalAlignment="Top"/>
-        <Label Content="Surface" HorizontalAlignment="Left" Margin="43,181,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre de piece" HorizontalAlignment="Left" Margin="38,225,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre de chambre" HorizontalAlignment="Left" Margin="38,272,0,0" VerticalAlignment="Top"/>
-        <Label Content="Cave" HorizontalAlignment="Left" Margin="47,310,0,0" VerticalAlignment="Top"/>
-        <Label Content="Parking" HorizontalAlignment="Left" Margin="43,348,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="152,395,0,0" VerticalAlignment="Top" Width="184"/>
+    <Grid Margin="15,15,15,15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
 
+        <TextBox x:Name="txtMsNom" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap"  VerticalAlignment="Center" />
+        <TextBox x:Name="txtMsValeur" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtMsAdresse" Grid.Row="2" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtMsSurface" Grid.Row="3" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtMsNbPiece" Grid.Row="4" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtMsNbChambre" Grid.Row="5" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox x:Name="txtMsCave" Grid.Row="6" Grid.Column="1"  TextWrapping="Wrap"  VerticalAlignment="Center" />
+        <TextBox x:Name="txtMsParking" Grid.Row="7" Grid.Column="1"  TextWrapping="Wrap" VerticalAlignment="Center" />
+        
+        <Label Content="Nom" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Valeur" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Adresse" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Surface" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Nombre de pièce" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Nombre de chambre" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Cave" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center"/>
+        <Label Content="Parking" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center"/>
+        <Button x:Name="btnAjouter"  Grid.Row="9" Grid.Column="1" Content="Ajouter" HorizontalAlignment="Center" VerticalAlignment="center" Click="btnAjouter_Click"/>
     </Grid>
 </Page>

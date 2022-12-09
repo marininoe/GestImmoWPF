@@ -1,5 +1,6 @@
 ﻿using GestImmoWPF.Data.DAL;
 using GestImmoWPF.Views.Forms;
+using GestImmoWPF.Views.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,9 +27,9 @@ namespace GestImmoWPF.Views.Subviews
         {
             InitializeComponent();
 
-            //ListBien bienview = new ListBien();
-            this.listBiens.Navigate(new ListBien());
-            this.AjtBiens.Navigate(new GererBienFrom());
+            ListBien bienview = new ListBien();
+            this.listBiens.Navigate(bienview);
+            this.AjtBiens.Navigate(new GererBienFrom(bienview));
         }
 
         private void AjtBiens_Navigated(object sender, NavigationEventArgs e)
@@ -39,6 +40,16 @@ namespace GestImmoWPF.Views.Subviews
         private void listBiens_Navigated(object sender, NavigationEventArgs e)
         {
            
+        }
+
+        private void Frame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void Frame_Navigated_1(object sender, NavigationEventArgs e)
+        {
+            
         }
     }
 }

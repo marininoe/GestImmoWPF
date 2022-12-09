@@ -10,7 +10,7 @@ namespace WPF_TP.Data.Models
         private int mensualite;
         private int duree;
         private DateTime dateDebut;
-        private Biens unBiens;
+        
         
         public Pret(int apport, int mensualite, int duree, DateTime dateDebut)
         {
