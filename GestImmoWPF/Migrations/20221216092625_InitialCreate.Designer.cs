@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GestImmoWPF.Migrations
 {
     [DbContext(typeof(ImmoContext))]
-    [Migration("20221118091846_InitialCreate")]
+    [Migration("20221216092625_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -62,13 +62,11 @@ namespace GestImmoWPF.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ContratId"));
 
-                    b.Property<string>("DateDebut")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<DateTime>("DateDebut")
+                        .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("DateFin")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<DateTime>("DateFin")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("Loyer")
                         .HasColumnType("integer");

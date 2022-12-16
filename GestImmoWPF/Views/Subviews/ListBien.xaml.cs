@@ -1,4 +1,5 @@
 ﻿using GestImmoWPF.Data.DAL;
+using GestImmoWPF.Views.Forms;
 using GestImmoWPF.Views.Tools;
 using System;
 using System.Collections.Generic;
@@ -53,11 +54,11 @@ namespace GestImmoWPF.Views.Subviews
         }
 
 
-        private void ListBiensView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+         private void afficheBiens_MouseDoubleClick(object sender, SelectionChangedEventArgs e)
         {
-
+            //this.Frame_Ajouter_Bien.Navigate((gererBoxFrom));
         }
 
-    
+       
     }
 }

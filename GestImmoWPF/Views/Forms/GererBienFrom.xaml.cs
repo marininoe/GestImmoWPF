@@ -53,15 +53,5 @@ namespace GestImmoWPF.Views.Forms
             }
         }
 
-        private void Frame_Ajouter_Bien_Navigated(object sender, NavigationEventArgs e)
-        {
-
-        }
-        
-
-       
-
-       
-
     }
 }

@@ -13,14 +13,22 @@ namespace WPF_TP.Data.Models
         private List<Contrat> listContrat = new List<Contrat>();
         private Pret? pret;
         private Intervention? intervention;
-       
-        public Biens(string nom, string adresse, int valeur, int surface, int biensId, List<Contrat> listContrat, Pret pret, Intervention intervention)
+
+        public Biens(string nom, string adresse, int valeur, int surface)
         {
             this.nom = nom;
             this.adresse = adresse;
             this.valeur = valeur;
             this.surface = surface;
-            BiensId = biensId;
+        }
+
+        public Biens(string nom, string adresse, int valeur, int surface, List<Contrat> listContrat, Pret pret, Intervention intervention)
+        {
+            this.nom = nom;
+            this.adresse = adresse;
+            this.valeur = valeur;
+            this.surface = surface;
+
             ListContrat = listContrat;
             Pret = pret;
             Intervention = intervention;

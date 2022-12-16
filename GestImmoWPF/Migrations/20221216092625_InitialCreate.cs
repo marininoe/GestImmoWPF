@@ -35,8 +35,8 @@ namespace GestImmoWPF.Migrations
                     ContratId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Loyer = table.Column<int>(type: "integer", nullable: false),
-                    DateDebut = table.Column<string>(type: "text", nullable: false),
-                    DateFin = table.Column<string>(type: "text", nullable: false)
+                    DateDebut = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    DateFin = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -59,13 +59,11 @@ namespace GestImmoWPF.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ContratId"));
 
-                    b.Property<string>("DateDebut")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<DateTime>("DateDebut")
+                        .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("DateFin")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<DateTime>("DateFin")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("Loyer")
                         .HasColumnType("integer");
