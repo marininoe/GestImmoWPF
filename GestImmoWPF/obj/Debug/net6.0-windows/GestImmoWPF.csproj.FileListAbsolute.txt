@@ -27,6 +27,11 @@ C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\bin\Debug\net6.0-windows\
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\GestImmoWPF.csproj.AssemblyReference.cache
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\BienView.g.cs
+C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailAppartementView.g.cs
+C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailBiensView.g.cs
+C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailBoxView.g.cs
+C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailHabitationView.g.cs
+C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailMaisonView.g.cs
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Forms\GererAppartementFrom.g.cs
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Forms\GererBienFrom.g.cs
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Forms\GererBoxFrom.g.cs
@@ -42,6 +47,11 @@ C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\GestImmoWPF_MarkupCompile.lref
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\BienView.baml
+C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailAppartementView.baml
+C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailBiensView.baml
+C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailBoxView.baml
+C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailHabitationView.baml
+C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailMaisonView.baml
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Forms\GererAppartementFrom.baml
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Forms\GererBienFrom.baml
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Forms\GererBoxFrom.baml
@@ -63,8 +73,3 @@ C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\GestImmoWPF.pdb
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\GestImmoWPF.genruntimeconfig.cache
 C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\ref\GestImmoWPF.dll
-C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailAppartementView.g.cs
-C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailBiensView.g.cs
-C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailBoxView.g.cs
-C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailHabitationView.g.cs
-C:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\obj\Debug\net6.0-windows\Views\Details\AfficherDetailMaisonView.g.cs

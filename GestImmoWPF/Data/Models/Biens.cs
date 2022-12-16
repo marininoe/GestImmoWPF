@@ -6,6 +6,7 @@ namespace WPF_TP.Data.Models
 {
     public class Biens
     {
+        private int bienId;
         private string nom;
         private string adresse;
         private int valeur;
@@ -22,16 +23,16 @@ namespace WPF_TP.Data.Models
             this.surface = surface;
         }
 
-        public Biens(string nom, string adresse, int valeur, int surface, List<Contrat> listContrat, Pret pret, Intervention intervention)
+        public Biens(int bienId, string nom, string adresse, int valeur, int surface, List<Contrat> listContrat, Pret pret, Intervention intervention)
         {
+            this.bienId = bienId;
             this.nom = nom;
             this.adresse = adresse;
             this.valeur = valeur;
             this.surface = surface;
-
-            ListContrat = listContrat;
-            Pret = pret;
-            Intervention = intervention;
+            this.ListContrat = listContrat;
+            this.Pret = pret;
+            this.Intervention = intervention;
         }
         public int BiensId { get; set; }
         public string Nom { get => nom; set => nom = value; }

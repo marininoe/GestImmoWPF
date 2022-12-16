@@ -24,5 +24,7 @@ namespace GestImmoWPF.Views.Details
         {
             InitializeComponent();
         }
+
+       
     }
 }

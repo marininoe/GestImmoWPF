@@ -24,16 +24,12 @@ namespace GestImmoWPF.Views.Subviews
     /// </summary>
     public partial class ListBien : Page, IObserver
     {
-        ImmoContext ctx = ImmoContext.getInstace();
-        public ListBien()
+        private Frame frmDetailView;
+        public ListBien(Frame frmDetailView)
         {
             InitializeComponent();
-            ListBiensView.Items.Clear();
-
-            foreach (Biens bien in ctx.Biens)
-            {
-                ListBiensView.Items.Add(bien.Nom);
-            }
+            this.frmDetailView = frmDetailView;
+            this.refeshList();
         }
 
 
@@ -52,11 +48,11 @@ namespace GestImmoWPF.Views.Subviews
         {
             this.refeshList();
         }
+        
 
-
-         private void afficheBiens_MouseDoubleClick(object sender, SelectionChangedEventArgs e)
+         private void affiche(object sender, SelectionChangedEventArgs e)
         {
-            //this.Frame_Ajouter_Bien.Navigate((gererBoxFrom));
+            this.frmDetailView.Navigate(new AfficheBiensView());
         }
 
        

@@ -2,6 +2,11 @@
 
 FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\MainWindow.xaml;;
 FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\BienView.xaml;;
+FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Details\AfficherDetailAppartementView.xaml;;
+FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Details\AfficherDetailBiensView.xaml;;
+FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Details\AfficherDetailBoxView.xaml;;
+FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Details\AfficherDetailHabitationView.xaml;;
+FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Details\AfficherDetailMaisonView.xaml;;
 FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Forms\GererAppartementFrom.xaml;;
 FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Forms\GererBienFrom.xaml;;
 FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Forms\GererBoxFrom.xaml;;
@@ -12,9 +17,4 @@ FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\PrestataireView.xa
 FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\PretView.xaml;;
 FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Subviews\AfficheBiensView.xaml;;
 FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Subviews\ListBien.xaml;;
-FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Details\AfficherDetailMaisonView.xaml;;
-FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Details\AfficherDetailAppartementView.xaml;;
-FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Details\AfficherDetailBoxView.xaml;;
-FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Details\AfficherDetailHabitationView.xaml;;
-FC:\Users\n.marini\source\repos\GestImmoWPF\GestImmoWPF\Views\Details\AfficherDetailBiensView.xaml;;
 

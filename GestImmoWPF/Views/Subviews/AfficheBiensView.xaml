@@ -9,6 +9,7 @@
       Title="AfficheBiensView">
 
     <Grid>
-        
+        <Frame x:Name="afficheDetailBiens" Content="Frame"/>
+
     </Grid>
 </Page>

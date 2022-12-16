@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestImmoWPF.Data.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_TP.Data.Models;
 
 namespace GestImmoWPF.Views.Subviews
 {
@@ -20,9 +22,20 @@ namespace GestImmoWPF.Views.Subviews
     /// </summary>
     public partial class AfficheBiensView : Page
     {
-        public AfficheBiensView()
+        public AfficheBiensView(int BienId)
         {
             InitializeComponent();
+            ImmoContext ctx = ImmoContext.getInstace();
+
+            Biens bien = ctx.Biens.Find(BienId);
+
+            if (bien is Box) ;
+            {
+                this.FrmAfficheBien.navigate(new Bow)
+            }
+
+
+
         }
     }
 }

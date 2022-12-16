@@ -27,7 +27,7 @@ namespace GestImmoWPF.Views.Subviews
         {
             InitializeComponent();
 
-            ListBien bienview = new ListBien();
+            ListBien bienview = new ListBien(this.AjtBiens);
             this.listBiens.Navigate(bienview);
             this.AjtBiens.Navigate(new GererBienFrom(bienview));
         }

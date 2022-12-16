@@ -9,6 +9,29 @@
       Title="AfficherDetailBoxView">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="168"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+           
+
+
+        </Grid.RowDefinitions>
+
+
+
+        <Label Content="Nom" Grid.Column="0" VerticalAlignment="Center" Height="26"/>
+        <Label Content="Valeur" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Height="26"/>
+        <Label Content="Adresse" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Height="26"/>
+        <Label Content="Surface" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Height="26"/>
+       
+
+
+
     </Grid>
 </Page>
