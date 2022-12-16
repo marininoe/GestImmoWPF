@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace WPF_TP.Data.Models
@@ -8,17 +9,18 @@ namespace WPF_TP.Data.Models
     public class Contrat
     {
         private int loyer;
-        private string dateDebut;
-        private string dateFin;
+        private DateTime dateDebut;
+        private DateTime dateFin;
         private List<Locataire> listLocataire = new List<Locataire>();
         private Biens unbien;
-
-        public Contrat(int loyer, string dateDebut, string dateFin, List<Locataire> listLocataires)
+        
+        public Contrat(int loyer, DateTime dateDebut, DateTime dateFin, List<Locataire> listLocataires,Biens unbien)
         {
             this.Loyer = loyer;
             this.DateDebut = dateDebut;
             this.DateFin = dateFin;
             this.ListLocataire = listLocataires;
+           
         }
         public Contrat()
         {
@@ -26,9 +28,13 @@ namespace WPF_TP.Data.Models
         }
         public int ContratId { get; set; }
         public int Loyer { get => loyer; set => loyer = value; }
-        public string DateDebut { get => dateDebut; set => dateDebut = value; }
-        public string DateFin { get => dateFin; set => dateFin = value; }
+        public DateTime DateDebut { get => dateDebut; set => dateDebut = value; }
+        public DateTime DateFin { get => dateFin; set => dateFin = value; }
         internal List<Locataire> ListLocataire { get => listLocataire; set => listLocataire = value; }
+
+
+        public static DateTime dateBailEnCours = new DateTime(2000, 1, 1);
+
         public void afficher()
         {
             Console.WriteLine("===Bail===");
@@ -41,7 +47,7 @@ namespace WPF_TP.Data.Models
                 Console.WriteLine("\n" + locataire.Nom + locataire.Prenom + " - " + locataire.Age + " - " + locataire.Profession);
             }
 
-
+            
 
 
             // List<Locataire> listLocataire.Add(jean, paul, 50, prof);

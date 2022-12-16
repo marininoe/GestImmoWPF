@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\GestImmoWPF",
+    "\\GestImmoWPF\\Data",
+    "\\GestImmoWPF\\Data\\Models",
     "\\GestImmoWPF\\Views",
+    "\\GestImmoWPF\\Views\\Forms",
     "\\GestImmoWPF\\Views\\Subviews"
   ],
   "SelectedNode": "\\GestImmoWPF.sln",

@@ -13,13 +13,17 @@ namespace WPF_TP.Data.Models
         private List<Contrat> listContrat = new List<Contrat>();
         private Pret? pret;
         private Intervention? intervention;
-
-        public Biens(string nom, string adresse, int valeur, int surface)
+       
+        public Biens(string nom, string adresse, int valeur, int surface, int biensId, List<Contrat> listContrat, Pret pret, Intervention intervention)
         {
             this.nom = nom;
             this.adresse = adresse;
             this.valeur = valeur;
             this.surface = surface;
+            BiensId = biensId;
+            ListContrat = listContrat;
+            Pret = pret;
+            Intervention = intervention;
         }
         public int BiensId { get; set; }
         public string Nom { get => nom; set => nom = value; }
@@ -29,6 +33,7 @@ namespace WPF_TP.Data.Models
         internal List<Contrat> ListContrat { get => listContrat; set => listContrat = value; }
         internal Pret Pret { get => pret; set => pret = value; }
         internal Intervention Intervention { get => intervention; set => intervention = value; }
+       
 
         public int benefNet()
         {
@@ -46,9 +51,33 @@ namespace WPF_TP.Data.Models
             Console.WriteLine("Surface : " + Surface);
             Console.WriteLine("Benefice Net : " + benefNet());
         }
-        public void jlespeindu()
+
+
+
+       
+
+
+        public int calculerRentabiliteNetMensuel()
         {
-            Console.WriteLine("les abonnés ils m'ont di de la peindre, alors je l'ai peindu");
+            int montantPret = 0;
+            int loyer = 0;
+
+            if(this.pret != null)
+            {
+                montantPret = this.Pret.Mensualite;
+            }
+            if(this.ListContrat.Count > 0)
+            {
+                foreach(Contrat contrat in this.listContrat)
+                {
+                    if (contrat.DateFin == Contrat.dateBailEnCours)
+                    {
+                        loyer = contrat.Loyer;
+                        break;
+                    }
+                }
+            }
+            return loyer - montantPret;
         }
     }
 }
